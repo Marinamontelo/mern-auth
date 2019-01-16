@@ -18,7 +18,7 @@ const store = createStore(
   rootReducer, 
   initialState,
   compose(    
-    applyMiddleware(thunk)
+    applyMiddleware(...middleware)
     
   )
 );
